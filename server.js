@@ -40,6 +40,10 @@ app.get('/animals', (req, res) => {
   res.send(['dog', 'cat', 'bird']);
 });
 
+setInterval(countUp, 333);
+function countUp(){
+  counter++;
+}
 
 
 
